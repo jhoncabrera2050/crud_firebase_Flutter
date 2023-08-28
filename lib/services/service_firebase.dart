@@ -21,7 +21,7 @@ Future<List> getMovie() async{
 }
 // funcion para guardar en la bd
 Future<void> addMovie(String movie) async{
-  await DB.collection("Peliculas").add({"title" : movie });
+  await DB.collection("Peliculas").add({"title" : movie});
 }
 
 // funcion para actualizar la pelicula en DB
